@@ -49,8 +49,7 @@ jobs:
           context: ./accident
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            ghcr.io/${{ env.REPO_NAME }}/accident:latest
+          tags: |            
             ghcr.io/${{ env.REPO_NAME }}/accident:${{ env.REF_NAME }}
             
       - name: Docker Build and push for Assessment
@@ -59,8 +58,7 @@ jobs:
           context: ./assessment
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            ghcr.io/${{ env.REPO_NAME }}/assessment:latest
+          tags: |            
             ghcr.io/${{ env.REPO_NAME }}/assessment:${{ env.REF_NAME }}
             
       - name: Docker Build and push for Compensation
@@ -69,8 +67,7 @@ jobs:
           context: ./compensation
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            ghcr.io/${{ env.REPO_NAME }}/compensation:latest
+          tags: |            
             ghcr.io/${{ env.REPO_NAME }}/compensation:${{ env.REF_NAME }}
             
 
