@@ -24,7 +24,7 @@ spec:
       containers: 
         - 
           name: "accident"
-          image: "ghcr.io/undefined"
+          image: "ghcr.io/acmexii/reqindustrialaccident/accident:v0-0-7"
           ports: 
             - 
               containerPort: 8080
@@ -69,7 +69,7 @@ spec:
       containers: 
         - 
           name: "assessment"
-          image: "ghcr.io/undefined"
+          image: "ghcr.io/acmexii/reqindustrialaccident/assessment:v0-0-7"
           ports: 
             - 
               containerPort: 8080
@@ -114,7 +114,7 @@ spec:
       containers: 
         - 
           name: "compensation"
-          image: "ghcr.io/undefined"
+          image: "ghcr.io/acmexii/reqindustrialaccident/compensation:v0-0-7"
           ports: 
             - 
               containerPort: 8080
