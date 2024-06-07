@@ -84,6 +84,7 @@ public class AccidentServiceImpl
             throw processException("info.nodata.msg");
         }
         */
+        return accident; 
     }
 
     @Override
